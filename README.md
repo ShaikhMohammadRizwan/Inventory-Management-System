@@ -27,30 +27,26 @@ bash
 git clone https://github.com/yourusername/inventory-management-system.git
 cd inventory-management-system
 
-2. Set up the virtual environment
+### 2. Set up the virtual environment
 For Python, use venv:
-bash
-Copy code
+
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-3. Install dependencies
-bash
-Copy code
+### 3. Install dependencies
+
 pip install -r requirements.txt
 
-5. Apply migrations
-bash
-Copy code
+### 4. Apply migrations
+
 python manage.py migrate
 
-7. Run the development server
-bash
-Copy code
+### 5. Run the development server
+
 python manage.py runserver
 Now, visit http://127.0.0.1:8000/ in your browser to see the app in action.
 
-Usage
-Create Products: After logging in, you can create new products by filling out a form with product details.
+### Usage
+
 View Products: View a list of all products added to the system.
 Update or Delete Products: You can update product details or delete them from the system as needed.
