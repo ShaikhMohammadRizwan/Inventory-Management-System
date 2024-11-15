@@ -1,0 +1,35 @@
+{% extends "invApp/layout.html" %}
+
+{% block title %}
+    Delete Product
+{% endblock title %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="text-center text-danger mb-4">
+        Are You Sure You Want to Delete This Product?
+    </h1>
+
+    <form method="post" class="text-center p-4 border rounded shadow-sm">
+        {% csrf_token %}
+        
+        <!-- Warning Message -->
+        <div class="alert alert-warning mb-4">
+            <strong>Warning!</strong> This action cannot be undone.
+        </div>
+
+        <!-- Buttons -->
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-danger btn-lg px-4 py-2 mr-3">
+                Yes, Delete
+            </button>
+
+            <a href="{% url 'product_list' %}" class="btn btn-secondary btn-lg px-4 py-2">
+                Cancel
+            </a>
+        </div>
+    </form>
+</div>
+
+{% endblock content %}

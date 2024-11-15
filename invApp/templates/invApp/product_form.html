@@ -1,0 +1,83 @@
+{% extends "invApp/layout.html" %}
+
+{% block title %}
+    Home
+{% endblock title %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center mb-4 text-dark">
+        Product Form
+    </h1>
+
+    <form method="POST" class="p-4 border rounded shadow-sm bg-light">
+        {% csrf_token %}
+        
+        <!-- Displaying the form fields with custom styling -->
+        <div class="form-group mb-3">
+            {{ form.as_p }}
+        </div>
+
+        <!-- Save button with elegant design -->
+        <div class="text-center">
+            <button class="btn btn-primary btn-lg px-5 py-3 mt-3 shadow" type="submit">
+                Save Product
+            </button>
+        </div>
+    </form>
+</div>
+
+<!-- Adding custom styles for a clean look -->
+<style>
+    body {
+        background-color: #f4f6f9;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    h1 {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+        background-color: #ffffff;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        padding: 14px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+    }
+
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        outline: none;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 12px 25px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    .form-group label {
+        color: #333;
+        font-weight: bold;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+        color: #555;
+    }
+</style>
+{% endblock content %}
