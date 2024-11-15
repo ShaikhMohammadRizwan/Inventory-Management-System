@@ -49,4 +49,5 @@ Now, visit http://127.0.0.1:8000/ in your browser to see the app in action.
 ### Usage
 
 View Products: View a list of all products added to the system.
+
 Update or Delete Products: You can update product details or delete them from the system as needed.
