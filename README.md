@@ -54,15 +54,3 @@ Usage
 Create Products: After logging in, you can create new products by filling out a form with product details.
 View Products: View a list of all products added to the system.
 Update or Delete Products: You can update product details or delete them from the system as needed.
-Contributing
-Feel free to fork this repository, open issues, and submit pull requests if you'd like to contribute. I appreciate your help in making this project better!
-
-License
-This project is open-source and available under the MIT License.
-
-yaml
-Copy code
-
----
-
-Let me know if you'd like a more detailed README or additional documentation for your other pr
